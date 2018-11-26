@@ -16,9 +16,6 @@ WORKDIR ../
 RUN git clone https://github.com/NAVCoin/navcoin-core.git
 WORKDIR /navcoin-core
 RUN git checkout 0225ba53f866cff8c71198f453627c24153c9f36
-WORKDIR /navcoin-core/depends
-RUN apt-get install curl
-RUN make
 WORKDIR /navcoin-core
 
 RUN ./autogen.sh
