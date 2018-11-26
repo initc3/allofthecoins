@@ -2,10 +2,9 @@ useful commands:
 ```shell
 docker build -t allofthecoins:bitcoin ./
 docker run --name bitcoin -itd allofthecoins:bitcoin
-docker exec -it ./src/bitcoin-cli getinfo
-docker exec -it tail -F /root/.bitcoin/debug.log
+docker exec -it bitcoin src/bitcoin-cli --version
+docker exec -it bitcoin tail /root/.bitcoin/debug.log
 ```
-
 
 Runs the bitcoin node, listens of port 8333 on the host, listens for local RPC connections on 8332
 
