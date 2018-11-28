@@ -8,8 +8,8 @@ docker exec -it qtum src/qtum-cli getpeerinfo
 docker exec -it qtum bash
 ```
 
-Runs the qtum node, listens of port 8333 on the host, listens for local RPC connections on 8332
+Runs the qtum node, listens of port 3888 on the host, listens for local RPC connections on 3889
 
 ```shell
-docker run --name qtum -itd -p 8333:8333 -p 127.0.0.1:8332:8332 -v qtumd-data:/root/.qtum allofthecoins:qtum
+docker run --name qtum -itd -p 3888:3888 -p 127.0.0.1:3889:3889 -v qtumd-data:/root/.qtum allofthecoins:qtum
 ```

@@ -15,7 +15,7 @@ RUN ./autogen.sh
 RUN ./configure
 RUN make -j2
 
-EXPOSE 8333
+EXPOSE 3888
 VOLUME /root/.qtum
 
 ADD qtum.conf /root/.qtum/qtum.conf

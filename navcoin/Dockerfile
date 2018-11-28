@@ -19,7 +19,7 @@ RUN git checkout 0225ba53f866cff8c71198f453627c24153c9f36
 WORKDIR /navcoin-core
 
 RUN ./autogen.sh
-RUN ./configure
+RUN ./configure --enable-debug
 RUN make
 
 EXPOSE 18886
