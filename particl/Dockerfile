@@ -15,7 +15,7 @@ RUN ./autogen.sh
 RUN ./configure --disable-tests --disable-bench
 RUN make
 
-EXPOSE 8333
+EXPOSE 51738
 VOLUME /root/.particl
 
 ADD particl.conf /root/.particl/particl.conf

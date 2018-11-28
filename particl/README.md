@@ -8,8 +8,8 @@ docker exec -it particl src/particl-cli getpeerinfo
 docker exec -it particl bash
 ```
 
-Runs the particl node, listens of port 8333 on the host, listens for local RPC connections on 8332
+Runs the particl node, listens of port 51738 on the host, listens for local RPC connections on 51735
 
 ```shell
-docker run --name particl -itd -p 8333:8333 -p 127.0.0.1:8332:8332 -v particld-data:/root/.particl allofthecoins:particl
+docker run --name particl -itd -p 51738:51738 -p 127.0.0.1:51735:51735 -v particld-data:/root/.particl allofthecoins:particl
 ```
