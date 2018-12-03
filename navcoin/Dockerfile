@@ -16,6 +16,7 @@ WORKDIR ../
 RUN git clone https://github.com/NAVCoin/navcoin-core.git
 
 WORKDIR /navcoin-core/depends
+RUN apt-get update
 RUN apt-get install curl
 RUN make
 
