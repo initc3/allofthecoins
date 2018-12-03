@@ -14,8 +14,12 @@ RUN ./configure && make && make install
 WORKDIR ../
 
 RUN git clone https://github.com/NAVCoin/navcoin-core.git
-WORKDIR /navcoin-core
 
+WORKDIR /navcoin-core/depends
+RUN apt-get install curl
+RUN make
+
+WORKDIR /navcoin-core
 RUN ./autogen.sh
 RUN ./configure --enable-debug
 RUN make
